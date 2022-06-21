@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm">
+      <h3>Dibuja un numero de 0 a 9</h3>
+      <div class="wrapper">
+        <canvas drawable (newImage)="predict($event)"></canvas><br>
+      </div>
+      <button class="btn btn-sm btn-warning" (click)="canvas.clear();clear();">Borrar</button>
+    </div>
+  </div>
+  <div>
+    <h1>Numero a Predecir: {{predictedNumber}}</h1>
+  </div>
+</div>
